@@ -2,8 +2,8 @@
 
 module Prometheus
   module Client
-    module Rust
-      module Datastores
+    module DataStores
+      module Rust
         VERSION = "0.1.0"
       end
     end

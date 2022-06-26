@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require "prometheus/client/rust/datastores"
+require "prometheus/client/data_stores/rust"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
