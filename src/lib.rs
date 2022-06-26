@@ -1,25 +1,6 @@
-use rutie::{Object, Module, RString, VM, class, methods};
+mod single_threaded;
 
-class!(SingleThreaded);
-
-methods!(
-    SingleThreaded,
-    _rtself,
-
-    fn pub_reverse(input: RString) -> RString {
-        let ruby_string = input.
-            map_err(|e| VM::raise_ex(e) ).
-            unwrap();
-
-        RString::new_utf8(
-            &ruby_string.
-            to_string().
-            chars().
-            rev().
-            collect::<String>()
-        )
-    }
-);
+use rutie::Module;
 
 #[allow(non_snake_case)]
 #[no_mangle]
@@ -29,7 +10,5 @@ pub extern "C" fn Init_data_stores_module() {
         get_nested_module("DataStores").
         get_nested_module("Rust");
 
-    module.define_nested_class("SingleThreaded", None).define(|klass| {
-        klass.def_self("reverse", pub_reverse);
-    });
+    single_threaded::init(&mut module);
 }
