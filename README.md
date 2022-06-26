@@ -1,6 +1,6 @@
-# Prometheus::Client::Rust::Datastores
+# Prometheus::Client::DataStores::Rust
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/prometheus/client/rust/datastores`. To experiment with that code, run `bin/console` for an interactive prompt.
+Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/prometheus/client/data_stores/rust`. To experiment with that code, run `bin/console` for an interactive prompt.
 
 TODO: Delete this and the text above, and describe your gem
 
@@ -8,11 +8,11 @@ TODO: Delete this and the text above, and describe your gem
 
 Install the gem and add to the application's Gemfile by executing:
 
-    $ bundle add prometheus-client-rust-datastores
+    $ bundle add prometheus-client-datastores-rust
 
 If bundler is not being used to manage dependencies, install the gem by executing:
 
-    $ gem install prometheus-client-rust-datastores
+    $ gem install prometheus-client-datastores-rust
 
 ## Usage
 
@@ -26,4 +26,4 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/prometheus-client-rust-datastores.
+Bug reports and pull requests are welcome on GitHub at https://github.com/Sinjo/prometheus-client-ruby-datastores-rust.
