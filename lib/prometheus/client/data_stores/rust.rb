@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require_relative "rust/single_threaded"
 require_relative "rust/version"
 require "rutie"
 
