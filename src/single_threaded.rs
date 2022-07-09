@@ -76,7 +76,7 @@ pub fn init(module: Module) {
         .get_nested_class("MetricStore");
 
     class.def_self("new", pub_new);
-    class.def("get", pub_get);
+    class.def("real_get", pub_get);
 
     *METRIC_STORE_CLASS.write().unwrap() = Some(class);
 }

@@ -30,6 +30,9 @@ module Prometheus
           # The reason to define thie here at all is that there's no way to
           # make it private from the Rust side.
           class MetricStore
+            def get(labels:)
+              real_get(labels)
+            end
           end
 
           private_constant :MetricStore
